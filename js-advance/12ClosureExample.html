@@ -1,0 +1,34 @@
+<html>
+
+<head>
+        <script>
+            
+               function area(length,base){
+                
+                return function(type){
+                    if(type==="triangle"){
+                       return 1/2*(length*base);
+                    }
+                    if(type==="rectangle"){
+                        return (length*base);
+                    }
+                }   
+
+               }
+               var tri=area(5,6)("triangle");
+               var rect=area(5,6)("rectangle");
+               
+               console.log(tri);
+               console.log(rect);
+                </script>
+
+</head>
+
+
+<body>
+    <h1> Clousre</h1>
+    <p>  A closure gives you access to an outer function's scope from an inner function</br> 
+</p>
+</body>
+<embed type="text/html" src="footer.html">
+</html>

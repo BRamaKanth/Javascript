@@ -1,0 +1,29 @@
+<html>
+
+<head>
+        <script>
+            
+            function callOuter(){
+                var a="hello";
+
+                var returnval=function(){
+                   var b="Clousre";
+                    console.log(a+" "+b);
+                }
+                return returnval;
+            }
+            var closureVal=callOuter();
+            closureVal();    //we are callng inner function,still we can access value of a ,this is due to closure
+            
+                </script>
+
+</head>
+
+
+<body>
+    <h1> Clousre</h1>
+    <p>  A closure gives you access to an outer function's scope from an inner function</br> 
+</p>
+</body>
+<embed type="text/html" src="footer.html">
+</html>

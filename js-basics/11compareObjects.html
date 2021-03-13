@@ -1,0 +1,44 @@
+<html>
+
+<head>
+        <script>
+                function myFunction(){
+
+                  var empObj1={
+                    "name":"Ramakanth",
+                    "age":27,
+                    "permanent":true
+                  }
+                  var empObj3={
+                    "name":"Ramakanth",
+                    "age":27,
+                    "permanent":true
+                  }
+
+                  var empObj2=empObj1;
+                   
+                  if(empObj2===empObj1){
+                      console.log(" true");
+                  }else{
+                    console.log(" false");
+                  }
+                 
+                  if(empObj3==empObj1){
+                      console.log("3 ,1  true");
+                  }else{
+                    console.log("3 ,1 false");
+                  }
+
+
+                } 
+
+                </script>
+
+</head>
+
+
+<body onload="myFunction()">
+<h1> Compare Objects</h1>
+</body>
+<embed type="text/html" src="footer.html">
+</html>

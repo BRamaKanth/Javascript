@@ -1,0 +1,41 @@
+<html>
+
+<head>
+        <script>
+                function myFunction(){
+
+                  var empObj1={
+                    "name":"Ramakanth",
+                    "age":27,
+                    "permanent":true
+                  }
+                  var empObj2={
+                    "name":"Ramakanth",
+                    "age":27,
+                    "permanent":true
+                  }
+                  console.log(empObj1);
+                  console.log(empObj2);
+                  empObj2.permanent=undefined;      //will not delete this property from object
+                  
+                  console.log("emp2 after undefined");
+                  console.log(empObj2);
+
+                  empObj1.permanent=null;
+
+                  console.log("emp1 after null");
+                  console.log(empObj1);
+
+
+                } 
+
+                </script>
+
+</head>
+
+
+<body onload="myFunction()">
+<h1>Null vs Undefined</h1>
+</body>
+<embed type="text/html" src="footer.html">
+</html>

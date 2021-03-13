@@ -1,0 +1,31 @@
+<html>
+
+<head>
+        <script>
+             var a="Ramakanth";
+           
+              function outer(){
+                  var b=a;
+                  console.log(b);
+                  function inner(){
+                      var c=b;      
+                      console.log(c);  //undefined ,as b got created during compile time ,so it will not looks to outer scope
+                                       //but during interpretation ,it got assigned after priting 
+                      var b="Vaishnav";
+                  }
+                  inner();
+              }
+
+              outer();
+                </script>
+
+</head>
+
+
+<body>
+<h1> Compliation and Interpretation</h1>
+<p> Compliation and Interpretation</br> 
+</p>
+</body>
+<embed type="text/html" src="footer.html">
+</html>

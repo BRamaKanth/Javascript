@@ -1,0 +1,26 @@
+<html>
+
+<head>
+        <script>
+             var name="Ramakanth";
+           
+           function setAge(){
+             if(name=="Ramakanth"){
+                  age=28;               //var was not defined,so it gets created in globalscope which is very bad way
+             }  
+           }
+             setAge();
+             console.log(name);
+             console.log(age);    //fetching from global scope  (window object)
+                </script>
+
+</head>
+
+
+<body>
+<h1> Without var decl in function for variable in JS 5</h1>
+<p> Problem in Global Scope  </br> 
+</p>
+</body>
+<embed type="text/html" src="footer.html">
+</html>

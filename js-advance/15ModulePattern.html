@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script>
+
+        function createPerson() {
+            var firstName = "DUMMY";
+            var lastName = "LUMY";
+            var returnObj = {
+                "getFirstName": function () {
+                    return firstName;
+                },
+                "getLastName": function () {
+                    return lastName;
+                },
+
+                "setFirstName": function (name) {
+                  firstName=name;
+                },
+                "setLastName":function(name){
+                    lastName=name;
+                }
+            };
+
+            return returnObj;
+
+        }
+
+        var person = createPerson();
+        console.log(person);
+      var fName =prompt("Enter firstName");
+      person.setFirstName(fName);
+      alert('First Name is '+person.getFirstName());
+        
+    </script>
+
+</head>
+
+
+<body>
+    <h1> Module Pattern</h1>
+    <p> Using closure variables for hiding variables  -Using functions is the only way to get the values (just like private variables in java)</br>
+    </p>
+</body>
+<embed type="text/html" src="footer.html">
+
+</html>

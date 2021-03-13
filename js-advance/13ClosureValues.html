@@ -1,0 +1,30 @@
+<html>
+
+<head>
+        <script>
+                var i=0;
+                function outer(){
+                    var j=0;
+                    return function(){
+                        i++;
+                        j++;
+                        console.log(i+" - "+j);
+                    }
+                }
+
+                var call1=outer();
+                var call2=outer();
+                call1();
+                call2();
+                </script>
+
+</head>
+
+
+<body>
+    <h1> Clousre</h1>
+    <p>  A closure gives you access to an outer function's scope from an inner function</br> 
+</p>
+</body>
+<embed type="text/html" src="footer.html">
+</html>
